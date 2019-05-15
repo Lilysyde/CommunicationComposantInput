@@ -1,0 +1,15 @@
+<p>
+  Communication entre les composant : @Input !
+</p>
+<div>
+  {{developer.lastname}}
+  {{developer.firstname}}
+  {{developer.age}}
+  {{developer.sexe}}
+  {{developer.bio}}
+  
+</div>
+
+<div *ngFor="let skill of developer.skill">
+<app-skill [skill]="skill"></app-skill>
+</div>
